@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3B0YMXSM4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M3B0YMXSM4');
-</script>
     <title>Ֆիզիկ</title>
     <link rel="stylesheet" href="ss.css">
     <script src="fiz.js"></script>
-    <meta name="google-site-verification" content="O9N0Fv_XblffQKnCsUprnBrnWVHKoX2BfeitWRUadkI" /> 
+    <link rel="stylesheet" href="style.css">
+    <title>Ֆիզիկ</title>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV3Z7TQ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <button id="open-form-button">&#9993;</button>
+    <form id="form" style="display:none;">
+      <div class="field">
+        <label for="from_name">Անուն</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="reply_to">Էլ․ Հասցե</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+      <div class="field">
+        <label for="message">Հաղորթագրություն</label>
+        <input type="text" name="message" id="message">
+      </div>
+    
+      <input type="submit" id="button" value="Ուղարկել" >
+    </form>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('az3LXRObWM4KAv2ge')
+      const form = document.getElementById('form');
+      const button = document.getElementById('open-form-button');
+      button.addEventListener('click', function() {
+        form.style.display = form.style.display === 'none' ? '' : 'none';
+      });
+    </script>
     <div class="container">
       <h1>Ֆիզիկ</h1>
       <form>

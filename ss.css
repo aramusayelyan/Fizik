@@ -1,9 +1,20 @@
+body{
+  background-image: url(1.jpg);
+}
 .container {
-  size: 100%;
+  color: black;
   margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 form {
+  color: black;
   display: inline-block;
   text-align: left;
   margin-top: 20px;
@@ -19,7 +30,12 @@ select {
   width: 100%;
   margin-bottom: 15px;
 }
- 
+.unknown1{
+  padding: 5px;
+  font-size: 16px;
+  width: 18%;
+
+}
 button{
   margin-top: 10px;
   padding: 10px 20px;
@@ -62,24 +78,7 @@ button{
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
  }
- 
- .container {
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
- }
- 
- input[type="text"] {
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
 
- }
- 
  button {
   padding: 10px 20px;
   margin: 10px;
