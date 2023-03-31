@@ -12,7 +12,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Ուղարկել';
-      alert('Հաղորթագրությունը հաջողությամբ տեղ է հասել!');
+      alert('Հաղորդագրությունը հաջողությամբ տեղ է հասել!');
     }, (err) => {
       btn.value = 'Ուղարկել';
       alert(JSON.stringify(err));
