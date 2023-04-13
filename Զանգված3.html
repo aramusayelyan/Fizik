@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9643296141773354"
+     crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Ֆիզիկ</title>
+    <link rel="stylesheet" href="ss.css">
+    <script src="fiz.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="photo_2023-01-01_20-47-36-removebg-preview.png">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+      <a href="ֆիզիկ.html" class="nav-branding"><img class="nav-branding" src="photo_2023-01-01_20-47-36-removebg-preview.png" alt=""></a>
+           <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="ֆիզիկ.html">Գլխավոր</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formula.html">Բանաձևեր</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">Մեր Մասին</a>
+            </li>
+           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          </nav>
+    </header>
+    <button id="open-form-button">&#9993;</button>
+    <form id="form" style="display:none;">
+      <div class="field">
+        <label for="from_name">Անուն</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="reply_to">Էլ․ Հասցե</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+      <div class="field">
+        <label for="message">Հաղորթագրություն</label>
+        <input type="text" name="message" id="message">
+      </div>
+    
+      <input type="submit" id="button" value="Ուղարկել" >
+    </form>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('az3LXRObWM4KAv2ge')
+      const form = document.getElementById('form');
+      const button = document.getElementById('open-form-button');
+      button.addEventListener('click', function() {
+        form.style.display = form.style.display === 'none' ? '' : 'none';
+      });
+    </script>
+    <div class="container">
+       <a href="ֆիզիկ.html"><h1>Ֆիզիկ</h1></a> 
+    <form>
+        <label for="unknown">Անհայտ:</label>
+        <select id="unknown">
+            <option value="m3">Զանգված</option>
+        </select><br>
+              
+        <label for="known2">Որոշ մարմիների խտությունը </label>
+        <select id="known2">
+            <option value="2700">Ալյումին-----2700</option>
+            <option value="1800">Աղյուս-----1800</option>
+            <option value="7300">Անագ-----7300</option>
+            <option value="2500">Ապակի-----2500</option>
+            <option value="10500">Արծաթ-----10500</option>
+            <option value="8500">Արույր-----8500</option>
+            <option value="2200">Բետոն-----2200</option>
+            <option value="2600">Գրանիտ-----2600</option>
+            <option value="7800">Երկաթ,պողպատ-----7800</option>
+            <option value="7000">Թուջ-----7000</option>
+            <option value="240">Խցան-----240</option>
+            <option value="800">Կաղնե փայտ-----800</option>
+            <option value="11300">Կապար-----11300</option>
+            <option value="2700">Մարմար-----2700</option>
+            <option value="1600">Շաքար-----1600</option>
+            <option value="19300">Ոսկի-----19300</option>
+            <option value="8900">Պղինձ-----8900</option>
+            <option value="900">Սառույց-----900</option>
+            <option value="400">Սոճու փայտ-----400</option>
+            <option value="2800">Ցեմենտ-----2800</option>
+            <option value="7100">Ցիննկ-----7100</option>
+            <option value="700">Բենզին-----700</option>
+            <option value="710">Եթեր-----710</option>
+            <option value="1800">Ծծմբական թթու-----1800</option>
+            <option value="800">Կերոսին-----800</option>
+            <option value="920">Ձեթ-----920</option>
+            <option value="1350">Մեղր-----1350</option>
+            <option value="800">Նավթ-----800</option>
+            <option value="1000">Ջուր-----1000</option>
+            <option value="1030">Ծովի ջուր-----1030</option>
+            <option value="13600">Սնդիկ-----13600</option>
+            <option value="800">Սպիրտ-----800</option>
+            <option value="0.18">Հելիում-----0,18</option>
+            <option value="0.09">Ջրածին-----0,09</option>
+            <option value="1.29">Օդ-----1,29</option>
+          </select><br>
+      
+        <label for="known1">Ծավալ</label>
+        <input type="text" id="known1"><br>
+        <!-- <label for="known2">Խտություն</label>
+        <input type="text" id="known2"> -->
+
+      
+        <button type="submit" onclick="calculate()">Տեսնել Արդյունքը</button>
+      </form>
+    </div>
+</body>
+</html>
