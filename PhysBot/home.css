@@ -1,0 +1,192 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.return-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.return-button:hover {
+  background-color: #0056b3;
+}
+
+.wainer {
+  color: #555658;
+}
+
+.carousel-inner {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+.header {
+  display: flex;
+}
+
+.carousel-item {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2C3E50;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+main {
+  padding: 4rem 0;
+}
+
+section {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2C3E50;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2C3E50;
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Background and Geometric Elements */
+
+body {
+  background-color: #E2E5E9;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(-45deg, #FFDDC1, #B5EAD7, #FFE9C6, #E2E5E9);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 50%);
+  z-index: -1;
+}
+
+img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

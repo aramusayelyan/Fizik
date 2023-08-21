@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <title>PhysBot</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+    <button id="backButton" class="return-button"><i class="fa fa-long-arrow-left" style="font-size:24px"></i></button>
+    <h1>PhysBot</h1>
+  </header>
+  <script>
+    document.getElementById("backButton").addEventListener("click", function() {
+      history.back();
+    });
+  </script>
+  <main>
+
+ 
+  <div id="carouselExample" class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="img/Physbot8.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot9.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot10.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot11.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="img/Physbot12.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot13.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot1.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot2.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="img/Physbot3.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot4.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot5.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot6.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot7.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+          <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot.png" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="img/Physbot.gif" alt="Physbot">
+          <p class="wainer">Artsakh STEM Expo 2023 գաղափարը մրցույթի հաղթող 🥇։</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-control carousel-control-prev" onclick="carouselSlide(-1)">
+      &#10094;
+    </div>
+    <div class="carousel-control carousel-control-next" onclick="carouselSlide(1)">
+      &#10095;
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlide(slideIndex);
+
+    function carouselSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+      var slides = document.getElementsByClassName("carousel-item");
+      
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  </script>
+
+  <!-- caruusel -->
+ 
+    <section id="interactive-lessons">
+      <div class="container">
+        <h3>Ի՞նչ է PhysBot‐ը։</h3>
+        <p>PhysBot-ը ռոբոտ է, որը նախատեսված է 9-16 տարեկան երեխաների, դպրոցների և ֆիզիկայով հետաքրքրված անձանց համար։ Դասասենյակների՝ շատ հաճախ չտրամադրող միջավայրի պատճառով, աշակերտները ամբողջությամբ չեն ներգրավվում դասապրոցեսին, հատկապես, երբ խոսքը վերաբերում է այնպիսի դժվար առարկայի, ինչպիսին ֆիզիկան է։ PhysBot-ը այս խնդրի ամենաճիշտ լուծումն է։ Ռոբոտը կդառնա ցանկացածիս ամենամոտ ընկերը, ով ֆիզիկայով հետաքրքրված է՝ ցուցադրելով փոքրիկ անիմացիաներ, յուրաքանչյուրի համար ստեղծելով իր անհատական ուղին, բերելով օրինակներ և վերջի վերջո, օգտագործելով խոսելու ունակությունը, մեր ռոբոտը ֆիզիկայի դասերը կներկայացնի հակիրճ, և, որ ամենակարևորն է՝ մատչելի ձևով։</p>
+        <img src="img/Physbot.png" alt="Physbot">
+      </div>
+    </section>
+    
+    <section id="personalized-learning">
+      <div class="container">
+        <h3>Ո՞րն է գաղափարի հիմնական նպատակը։ Ի՞նչ խնդիրներ կլուծի այն։</h3>
+        <p>PhysBot-ը նպատակ ունի երեխաների մոտ ֆիզիկայի հանդեպ հետաքրքրություն առաջացնել, ֆիզիկան ներկայացնել ավելի պարզ և մատչելի։ Այն ֆիզիկայի դասերը ներկայացնելու է ոչ ստանդարտ եղանակներով, այդպիսով  հետաքրքրություն առաջացնելով ֆիզիկայի հանդեպ։Այն կարողանալու է յուրաքանչյուր երեխայի համար կազմել անհատական պլան և ուսուցումը շարունակել ըստ այդ պլանի։ Ռոբոտն ունենալու է նաև կայքէջ, որտեղ երեխաները կարող են տալ իրենց բոլոր անհասկանալի հարցերը։ Ռոբոտն ամեն ինչ բացատրելու է հստակ և հակիրճ, բայց միևնույն ժամանակ մաքսիմալ մատչելի ու հասկանալի։
+</p>
+        <img src="img/Physbot12.png" alt="Physbot">
+      </div>
+    </section>
+    
+    <section id="problem-solving">
+      <div class="container">
+        <h3>Ինչպե՞ս առաջացավ Physbot-ի գաղափարը։</h3>
+        <p>«Ես» կրթական հիմնադրամի հերթական առաջադրանքներից մեկը մեր սեփական ռոբոտը ստեղծելն էր, գաղափարները շատ էին, բայց դրանցից պետք է ընտրեի միայն մեկը։ Այդ ժամանակ արդեն ունեի Ֆիզիկը, ծրագիր նախատեսված ֆիզիկայի խնդիրներ լուծելու համար։ Որոշեցի այդ երկուսը միավորել և մտքումս ծագեց PhysBot-ի գաղափարը։ Սակայն «Ես» կրթական հիմնադրամում ռոբոտը հավաքել չստացվեց՝ շրջափակման պատճառով, բայց չհուսահատվեցի, հենց այդ ժամանակ իմացածը Artsakh STEM expo-ի մասին և միանգամից դիմեցի։ Ի դեպ այս գաղափարը Artsakh STEM Expo 2023 գաղափարների մրցույթում զբաղեցրել է առաջին տեղը։</p>
+        <img src="img/Physbot10.png" alt="Physbot">
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 PhysBot. Բոլոր իրավունքները պաշտպանված են.</p>
+    <p>Կապ մեզ հետ։ fizikfizikyan@gmail.com</p>
+  </footer>
+</body>
+</html>

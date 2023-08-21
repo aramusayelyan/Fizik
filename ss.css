@@ -1,19 +1,23 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-header{
+
+header {
   background-color: white;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   color: black;
   text-decoration: none;
 }
-.navbar{
+
+.navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -21,72 +25,86 @@ a{
   margin-bottom: 10px;
   padding: 0 24px;
 }
-.nav-menu{
+
+.nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
-.nav-link{
+
+.nav-link {
   transform: 0.7s;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: dodgerblue;
 }
-.hamburger{
+
+.hamburger {
   display: none;
   cursor: pointer;
 }
-.nav-branding{
+
+.nav-branding {
   width: 60px;
   height: 60px;
 }
-.bar{
+
+.bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition:all 0.3s ease-in-out ;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
-@media(max-width:760px){
-  .hamburger{
+
+@media(max-width:760px) {
+  .hamburger {
     display: block;
   }
-  .hamburger.active.bar:nth-child(2){
+
+  .hamburger.active.bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active.bar:nth-child(1){
-    transform:translateY(-8px) rotate(-45deg) ;
+
+  .hamburger.active.bar:nth-child(1) {
+    transform: translateY(-8px) rotate(-45deg);
   }
-  .nav-menu{
+
+  .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color:white;
+    background-color: white;
     width: 100%;
     text-align: center;
     transition: 0.3s;
   }
-  .nav-item{
-    margin: 16px 0; 
+
+  .nav-item {
+    margin: 16px 0;
   }
-  .nav-menu.active{
+
+  .nav-menu.active {
     left: 0;
   }
-  
+
 }
-.center{
+
+.center {
   text-align: center;
 }
+
 .containerr {
   color: black;
   margin: 0 auto;
-margin-bottom: 4px;
-  max-width: 600px;
+  margin-bottom: 4px;
+  max-width: 800px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -105,38 +123,67 @@ margin-bottom: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.ban{
- margin-left: 50px;
- margin-right: 50px;
+
+.ban {
+  margin-left: 50px;
+  margin-right: 50px;
 
 }
-a{
+.formul{
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.formula{
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  max-width: 200px;
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+a {
   text-decoration: none;
   color: black;
 }
+
 form {
   color: black;
   display: inline-block;
   text-align: left;
   margin-top: 20px;
 }
+
 label {
   display: block;
   margin-bottom: 10px;
 }
-  
+
 select {
   padding: 5px;
   font-size: 16px;
   width: 100%;
   margin-bottom: 15px;
 }
-.unknown1{
+
+.unknown1 {
   padding: 5px;
   font-size: 16px;
   width: 18%;
 }
-button{
+
+button {
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #007bff;
@@ -147,14 +194,14 @@ button{
   cursor: pointer;
 }
 
- input[type="text"] {
+input[type="text"] {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
 
- }
- 
- button {
+}
+
+button {
   padding: 10px 20px;
   margin: 10px;
   border-radius: 5px;
@@ -164,15 +211,15 @@ button{
   color: white;
   cursor: pointer;
   font-size: 18px;
- }
- 
- button:hover {
-  background-color: #3e8e41;
- }
- 
+}
 
- body {
+button:hover {
+  background-color: #3e8e41;
+}
+
+
+body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
- }
+}             
 
