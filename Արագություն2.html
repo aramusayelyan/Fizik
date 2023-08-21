@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Ֆիզիկ</title>
+    <link rel="stylesheet" href="ss.css">
+    <script src="fiz.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+      <a href="ֆիզիկ.html" class="nav-branding"><img class="nav-branding" src="img/logo.png" alt="logo"></a>
+           <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="ֆիզիկ.html">Գլխավոր</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formula.html">Բանաձևեր</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">Մեր Մասին</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PhysBot/home.html">PhysBot</a>
+            </li>   
+           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          </nav>
+    </header>
+    <button id="open-form-button">&#9993;</button>
+    <form id="form" style="display:none;">
+      <div class="field">
+        <label for="from_name">Անուն</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="reply_to">Էլ․ Հասցե</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+      <div class="field">
+        <label for="message">Հաղորթագրություն</label>
+        <input type="text" name="message" id="message">
+      </div>
+    
+      <input type="submit" id="button" value="Ուղարկել" >
+    </form>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('az3LXRObWM4KAv2ge')
+      const form = document.getElementById('form');
+      const button = document.getElementById('open-form-button');
+      button.addEventListener('click', function() {
+        form.style.display = form.style.display === 'none' ? '' : 'none';
+      });
+    </script>
+    <div class="container">
+      <a href="ֆիզիկ.html"><h1>Ֆիզիկ</h1></a> 
+    <form>
+        <label for="unknown">Անհայտ:</label>
+        <select id="unknown">
+            <option value="v2">Արագություն</option>
+        </select><br>
+      
+        <label for="known1">Կինետիկ էներգիա</label>
+        <input type="text" id="known1"><br>
+      
+        <label for="known2">Զանգված</label>
+        <input type="text" id="known2">
+      
+        <button type="submit" onclick="calculate()">Տեսնել Արդյունքը</button>
+      </form>
+    </div>
+</body>
+</html>
